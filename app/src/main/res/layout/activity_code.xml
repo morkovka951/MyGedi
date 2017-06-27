@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:mask="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.user.mygedi.CodeActivity">
+
+
+    <ImageView
+        android:id="@+id/imageWaveup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/waveup"
+        android:scaleType="fitStart"/>
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the password\n from the SMS message."
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageWaveup2"
+        android:textColor="#7277b2"
+        android:textSize="16dp"/>
+
+    <br.com.sapereaude.maskedEditText.MaskedEditText
+        android:id="@+id/code_input"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:typeface="monospace"
+        android:textSize="28dp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        mask:allowed_chars="1234567890"
+        mask:mask="####"
+        android:hint="1234567890"
+        app:keep_hint="true"
+        android:layout_below="@id/imageWaveup2"
+        android:layout_marginTop="80dp"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:background="@drawable/buttoncontin"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_below="@id/code_input"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" />
+
+</RelativeLayout>
