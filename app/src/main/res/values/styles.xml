@@ -16,5 +16,18 @@
 
     </style>
 
+    <style name="AppThemeSplash.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"></style>
+
+    <style name="AppThemeSplash.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorPrimary">#ff7200</item>
+    </style>
+
+    <style name="SwitchButtonStyle">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
 
 </resources>

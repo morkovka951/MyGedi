@@ -20,13 +20,21 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+    //Calendar
+    compile project(path: ':mcalendarview')
+
     compile 'ru.egslava:MaskedEditText:1.0.5'
     compile 'com.hbb20:ccp:1.8'
+    compile 'com.kyleduo.switchbutton:library:1.4.6'
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.google.android.gms:play-services-maps:11.0.4'
+    compile 'com.jakewharton:butterknife:8.6.0'
     testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
 }

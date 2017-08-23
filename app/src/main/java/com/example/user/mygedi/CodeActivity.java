@@ -5,13 +5,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
+
+import java.util.Objects;
 
 import br.com.sapereaude.maskedEditText.MaskedEditText;
 
 public class CodeActivity extends AppCompatActivity implements View.OnClickListener {
 
-    MaskedEditText code_input;
+    EditText code_input;
     Button button2;
 
     @Override
@@ -19,7 +22,7 @@ public class CodeActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_code);
 
-        code_input = (MaskedEditText) findViewById(R.id.code_input);
+        code_input = (EditText) findViewById(R.id.code_input);
         button2 = (Button) findViewById(R.id.button2);
 
         button2.setOnClickListener(this);
@@ -31,8 +34,15 @@ public class CodeActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()){
             case R.id.button2:
 
-                Intent intent = new Intent(this, WelcomeActivity.class);
-                startActivity(intent);
+                if (code_input.getText().toString().equals("1111")){
+                    Intent intent = new Intent(this, WelcomeActivity.class);
+                    startActivity(intent);
+                    finish();
+                }else {
+                    Toast.makeText(getApplicationContext(), "Invalid", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
 
         }
     }

@@ -11,67 +11,129 @@
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
-        app:srcCompat="@drawable/waveup"
-        android:scaleType="fitXY" />
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/waveup" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        app:srcCompat="@drawable/icon"
-        android:layout_below="@id/imageView3"/>
-
+        android:layout_height="180dp"
+        android:layout_below="@id/imageView3"
+        app:srcCompat="@drawable/icon" />
 
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView5"
+        android:layout_centerHorizontal="true"
         android:scaleX="1.5"
         android:scaleY="1.9"
         android:text=" mygedi"
         android:textColor="#ff9500"
         android:textSize="35dp"
-        android:textStyle="bold"
-        android:layout_below="@+id/imageView5"
-        android:layout_centerHorizontal="true" />
+        android:textStyle="bold" />
 
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to the calendar. \n Make your life easy."
-        android:gravity="center_horizontal"
         android:layout_below="@id/textView2"
         android:layout_centerHorizontal="true"
-        android:textColor="#7277b2"
         android:layout_marginTop="20dp"
-        android:textSize="18dp"/>
+        android:gravity="center_horizontal"
+        android:text="Welcome to the calendar. \n Make your life easy."
+        android:textColor="#7277b2"
+        android:textSize="18dp" />
+
+
+    <ImageButton
+        android:id="@+id/mainButtonAW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@color/Button"
+        app:srcCompat="@drawable/checkbutton"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true" />
 
 
     <RelativeLayout
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_toLeftOf="@+id/taskToday"
+        android:layout_marginTop="60sp"
+        android:layout_marginRight="20sp">
+
+        <ImageButton
+            android:id="@+id/butAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            app:srcCompat="@drawable/ic_but1"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/tvAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/butAdd"
+            android:text="Add tasks" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/taskToday"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/textView8"
-        android:layout_marginTop="20dp">
-
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="30sp">
 
         <ImageButton
-            android:id="@+id/mainButtonAW"
+            android:id="@+id/butToday"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/oval"
-            android:background="@color/Button"/>
+            android:background="#00000000"
+            app:srcCompat="@drawable/ic_but3"
+            android:layout_centerHorizontal="true"/>
 
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/check"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/tvTotay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tasks for today"
+            android:layout_below="@id/butToday"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/myCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="60sp"
+        android:layout_toRightOf="@id/taskToday"
+        android:layout_marginLeft="20sp">
+
+        <ImageButton
+            android:id="@+id/butCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            app:srcCompat="@drawable/ic_but2"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/tvCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My calendar"
+            android:layout_below="@id/butCalendar"/>
 
     </RelativeLayout>
 
@@ -79,22 +141,21 @@
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/waveothers"
         android:layout_alignParentBottom="true"
-        android:scaleType="fitEnd"/>
+        android:scaleType="fitEnd"
+        app:srcCompat="@drawable/waveothers" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Privacy Policy"
         android:layout_alignParentBottom="true"
-        android:scaleType="fitEnd"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20sp"
+        android:scaleType="fitEnd"
+        android:text="Privacy Policy"
         android:textColor="#ffffff"
-        android:textSize="16dp"/>
-
+        android:textSize="16dp" />
 
 
 </RelativeLayout>

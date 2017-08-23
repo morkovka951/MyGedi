@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppThemeSplash">
         <activity
-            android:name=".SplashActivity"
+            android:name=".WelcomeActivity"
             android:theme="@style/AppThemeSplash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,14 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:theme="@style/AppThemeSplash" />
-        <activity
-            android:name=".CodeActivity"
-            android:theme="@style/AppThemeSplash" />
-        <activity android:name=".WelcomeActivity" />
-        <activity android:name=".ActivityWithButton"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".CodeActivity" />
+        <activity android:name=".ActivityMyCalendar" />
+        <activity android:name=".SplashActivity" />
+        <activity android:name=".ActivityAdd"></activity>
     </application>
 
 </manifest>

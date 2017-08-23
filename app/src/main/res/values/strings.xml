@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">MyGedi</string>
+    <string name="title_activity_my_calendar">ActivityMyCalendar</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="frg1">FRG1</string>
+    <string name="frg2">FRG2</string>
+    <string name="title_activity_add_nav">ActivityAdd_nav</string>
 </resources>

@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyGedi.iml" filepath="$PROJECT_DIR$/MyGedi.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mcalendarview/mcalendarview.iml" filepath="$PROJECT_DIR$/mcalendarview/mcalendarview.iml" />
     </modules>
   </component>
 </project>

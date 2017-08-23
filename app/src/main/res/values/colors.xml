@@ -5,4 +5,5 @@
 <color name="colorAccent">#FF4081</color>
 <color name="colorButton">#ff9600</color>
 <color name="Button">#00000000</color>
+<color name="bgColorUpCalendar">#ff7200</color>
 </resources>
