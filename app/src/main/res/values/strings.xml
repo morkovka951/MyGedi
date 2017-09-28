@@ -9,4 +9,14 @@
     <string name="frg1">FRG1</string>
     <string name="frg2">FRG2</string>
     <string name="title_activity_add_nav">ActivityAdd_nav</string>
+    <string name="create_a_new_task">Create a new task</string>
+    <string name="name_your_task">Name your task</string>
+    <string name="description">Description</string>
+    <string name="place">Place</string>
+    <string name="all_day">All day</string>
+    <string name="assign_to">Assign to</string>
+    <string name="more">... more</string>
+    <string name="important_task">Important Task</string>
+    <string name="required_answer">Required Answer</string>
+    <string name="hide_assigned">Hide assigned</string>
 </resources>

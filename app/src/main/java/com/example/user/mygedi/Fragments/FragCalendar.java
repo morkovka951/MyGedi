@@ -2,6 +2,8 @@ package com.example.user.mygedi.Fragments;
 
 import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.content.ClipData;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -11,9 +13,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.user.mygedi.ActivityAdd;
 import com.example.user.mygedi.R;
 
 import java.text.SimpleDateFormat;
@@ -51,21 +55,44 @@ public class FragCalendar extends Fragment implements View.OnClickListener {
     FragmentTransaction fTrans;
 
 
+
+
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.activity_my_calendar2, menu);
         super.onCreateOptionsMenu(menu, inflater);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        Intent intent;
+        switch (item.getItemId()){
+            case R.id.plus_my_calendar:
+                intent = new Intent(getActivity(), ActivityAdd.class);
+                startActivity(intent);
+                return false;
+            case R.id.alram_my_calendar:
+                //intent = new Intent(getActivity(), )
+                return false;
+            default:
+                break;
+        }
+        return false;
     }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         view = inflater.inflate(R.layout.fragment_calendar, container, false);
 
+        setHasOptionsMenu(true);
+
+
         expCalendarView = ((ExpCalendarView) view.findViewById(R.id.calendar_exp));
         tvMonth = (TextView) view.findViewById(R.id.tvMonth);
         tvDay = (TextView) view.findViewById(R.id.tvDay);
         tvYear = (TextView) view.findViewById(R.id.tvYear);
 
-        setHasOptionsMenu(true);
+
 
         //tvMonth.setText(String .valueOf((Calendar.getInstance().get(Calendar.MONTH) + 1)));
         Calendar cal=Calendar.getInstance();
@@ -91,6 +118,7 @@ public class FragCalendar extends Fragment implements View.OnClickListener {
 
         myTask.setOnClickListener(this);
         taskOoFriend.setOnClickListener(this);
+
 
 
 

@@ -12,7 +12,10 @@
         android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:scaleType="fitXY"
-        app:srcCompat="@drawable/waveup" />
+        app:srcCompat="@drawable/waveup"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -40,13 +43,12 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textView2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
         android:gravity="center_horizontal"
-        android:text="Welcome to the calendar. \n Make your life easy."
+        android:text="Welcome to the calendar. \n  Make your life easy."
         android:textColor="#7277b2"
-        android:textSize="18dp" />
+        android:textSize="18dp"
+        android:layout_alignTop="@+id/taskToday"
+        android:layout_centerHorizontal="true" />
 
 
     <ImageButton
@@ -57,7 +59,7 @@
         android:background="@color/Button"
         app:srcCompat="@drawable/checkbutton"
         android:layout_below="@+id/textView8"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"/>
 
 
     <RelativeLayout
@@ -66,7 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/textView2"
         android:layout_toLeftOf="@+id/taskToday"
-        android:layout_marginTop="60sp"
+        android:layout_marginTop="90sp"
         android:layout_marginRight="20sp">
 
         <ImageButton
@@ -116,7 +118,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textView2"
-        android:layout_marginTop="60sp"
+        android:layout_marginTop="90sp"
         android:layout_toRightOf="@id/taskToday"
         android:layout_marginLeft="20sp">
 
@@ -149,13 +151,14 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20sp"
+        android:layout_marginBottom="20dp"
         android:scaleType="fitEnd"
         android:text="Privacy Policy"
         android:textColor="#ffffff"
-        android:textSize="16dp" />
+        android:textSize="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/add"
+        android:layout_toEndOf="@+id/add" />
 
 
 </RelativeLayout>

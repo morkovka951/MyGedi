@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome_to_the_calendar_n_make_your_life_easy">Welcome to the calendar.   Make your life easy.</string>
+    <string name="action_settings">Настройки</string>
+    <string name="name_your_task">Название задачи</string>
+    <string name="create_a_new_task">Создание новой задачи</string>
+    <string name="description">Описание</string>
+    <string name="place">Место</string>
+    <string name="all_day">Весь день</string>
+    <string name="assign_to">Assign To</string>
+    <string name="more">... еще</string>
+    <string name="important_task">Важная задача</string>
+    <string name="required_answer">Обязательный ответ</string>
+    <string name="hide_assigned">Hide assigned</string>
+</resources>

@@ -40,12 +40,24 @@ public class WelcomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //textView8.setVisibility(View.INVISIBLE);
-                applyBlurMaskFilter(textView8, BlurMaskFilter.Blur.NORMAL);
+                if (add.getVisibility()==View.INVISIBLE) {
 
-                add.setVisibility(View.VISIBLE);
-                taskToday.setVisibility(View.VISIBLE);
-                myCalendar.setVisibility(View.VISIBLE);
+                    applyBlurMaskFilter(textView8, BlurMaskFilter.Blur.NORMAL);
+
+                    add.setVisibility(View.VISIBLE);
+                    taskToday.setVisibility(View.VISIBLE);
+                    myCalendar.setVisibility(View.VISIBLE);
+                }
+                else if (add.getVisibility()==View.VISIBLE){
+
+                    textView8.setLayerType(View.LAYER_TYPE_SOFTWARE,null);
+                    textView8.getPaint().setMaskFilter(null);
+
+                    add.setVisibility(View.INVISIBLE);
+                    taskToday.setVisibility(View.INVISIBLE);
+                    myCalendar.setVisibility(View.INVISIBLE);
+                }
+
 
                 ((ImageButton) findViewById(R.id.butAdd)).setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -58,8 +70,8 @@ public class WelcomeActivity extends AppCompatActivity {
                 ((ImageButton) findViewById(R.id.butToday)).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(WelcomeActivity.this, ActivityAdd.class);
-                        startActivity(intent);
+                        //Intent intent = new Intent(WelcomeActivity.this, ActivityAdd.class);
+                        //startActivity(intent);
                     }
                 });
 

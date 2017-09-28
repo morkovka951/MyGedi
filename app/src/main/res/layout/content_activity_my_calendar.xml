@@ -16,6 +16,4 @@ tools:showIn="@layout/app_bar_activity_my_calendar">
 
 </FrameLayout>
 
-
-
 </RelativeLayout>

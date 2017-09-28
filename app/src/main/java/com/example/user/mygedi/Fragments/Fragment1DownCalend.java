@@ -2,15 +2,11 @@ package com.example.user.mygedi.Fragments;
 
 import android.app.Fragment;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.TextView;
-
 import com.example.user.mygedi.R;
 
 /**
@@ -20,7 +16,7 @@ import com.example.user.mygedi.R;
 
 public class Fragment1DownCalend extends Fragment {
 
-    String[] name = {"Oleg", "Sergey", "Alekcandr"};
+    String[] name = { "Иван", "Марья", "Петр", "Антон", "Даша", "Борис", "Костя", "Игорь", "Анна", "Денис", "Андрей" };
 //    String[] surname = {"Marchenko", "Slinenko", "Elkin"};
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -29,8 +25,10 @@ public class Fragment1DownCalend extends Fragment {
         View view = inflater.inflate(R.layout.fragment1_down_calend, container, false);
         ListView lvFrag1 = (ListView)view.findViewById(R.id.lvFrag1);
         ArrayAdapter <String> adapter = new ArrayAdapter<String>(getActivity().getApplicationContext(), R.layout.list_view_frag1, name);
-
         lvFrag1.setAdapter(new ArrayAdapter<String>(view.getContext(), R.layout.list_view_frag1, name));
+
+
+//        lvFrag1.setAdapter(new ArrayAdapter<String>(view.getContext(), R.layout.list_view_frag1, name));
 
 
 //        LinearLayout linLayoutFragm1 = (LinearLayout) getActivity().findViewById(R.id.linLayoutFragm1);

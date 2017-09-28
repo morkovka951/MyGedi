@@ -1,6 +1,7 @@
 package com.example.user.mygedi;
 
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageButton;
 
 import com.example.user.mygedi.Fragments.FragCalendar;
 
@@ -54,12 +56,12 @@ public class ActivityMyCalendar extends AppCompatActivity
         }
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    //@Override
+    //public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.activity_my_calendar, menu);
-        return true;
-    }
+      //  getMenuInflater().inflate(R.menu.activity_my_calendar2, menu);
+        //return true;
+    //}
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -100,4 +102,5 @@ public class ActivityMyCalendar extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
 }

@@ -20,11 +20,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=" Enter your country \n and phone number. "
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/imageWaveup"
         android:textColor="#7277b2"
         android:gravity="center"
-        android:textSize="16dp"/>
+        android:textSize="16dp"
+        android:layout_below="@+id/imageWaveup"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/textView4"
@@ -100,8 +100,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         mask:srcCompat="@drawable/waveothers"
+        android:scaleType="fitEnd"
         android:layout_alignParentBottom="true"
-        android:scaleType="fitEnd"/>
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:id="@+id/textView6"
